@@ -129,13 +129,13 @@ public class SendQueueListener implements Runnable {
      */
 
     public void stop(){
-    	while(!SendQueue.isEmpty());
+    	while(!SendQueue.isEmpty()) {
+    		
+    	}
         this.isRunning = false;
     }
 
-    public void stop(){
-        this.isRunning = false;
-    }
+    
 
     /**
      * This method will do the work of taking the data from the queue 
